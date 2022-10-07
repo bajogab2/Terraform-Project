@@ -86,3 +86,28 @@ variable "operator_email" {
   type          = string
 }
 
+# auto scaing group variables
+variable "launch_template_name" {
+  default       = "dev-launch-template" 
+  description   = "name of the launch template"
+  type          = string
+}
+
+variable "ec2_image_id" {
+  default       = "ami-0602533e3a58cb4d7" 
+  description   = "id of the ami"
+  type          = string
+}
+
+variable "ec2_instance_type" {
+  default       = "t2.micro" 
+  description   = "the ec2 instance type"
+  type          = string
+}
+
+variable "ec2_key_ppair_name" {
+  default       = "web-server-key" 
+  description   = "name of the ec2 key pair"
+  type          = string
+}
+
